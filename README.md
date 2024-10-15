@@ -1,4 +1,4 @@
 # dotfiles
-<img src="/.github/screenshot.png" width="100%" />
+![alt screenshot](screenshot.png "screenshot")
 
 My dotfile for **Arch Linux** 💯
