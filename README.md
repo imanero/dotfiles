@@ -1,2 +1,4 @@
 # dotfiles
-My dot file on linux ☕
+<img src="/.github/screenshot.png" width="100%" />
+
+My dotfile for **Arch Linux** 💯
