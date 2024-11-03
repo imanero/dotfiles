@@ -1,0 +1,50 @@
+{
+    "layer": "top",
+    "height": 35,
+    "spacing": 20,
+    "margin": "10 10 0 10",
+    "reload_style_on_change": true,
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/language",
+        "pulseaudio"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "temperature",
+        "memory",
+        "cpu",
+        "clock"
+    ],
+    "hyprland/window": { "format": "{}", "icon": true }, 
+    "clock": { "interval": 1, "format": "{:%H:%M:%S}"},
+    "cpu": { 
+        "interval": 2, "format": "{icon} {usage}%",
+        "format-icons": ["<span color='#e0e0e0'> </span>", "<span color='#d68018'> </span>", "<span color='#c71636'> </span>"]
+    },
+    "memory": { "interval": 2, "format": " {}%"},
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "mute  ",
+        "format-icons": {
+            "default": [" "," ", " "]
+        },
+        "scroll-step": 5,
+        "on-click": "pulsemixer --toggle-mute",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "persistent-workspaces": {"1":[], "2": [], "3": [], "4": [], "5": []}
+    },
+    "hyprland/language": { "format": "{}", "format-en": "en", "format-fa": "fa" },
+    "temperature": {
+        "thermal-zone": 2,
+        "format": "{temperatureC}°C ",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C "
+    }
+}

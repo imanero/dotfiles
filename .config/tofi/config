@@ -1,0 +1,56 @@
+# Font
+font = "/usr/share/fonts/TTF/RobotoMonoNerdFont-Bold.ttf"
+font-size = 12
+font-features = ""
+font-variations = ""
+hint-font = false
+
+# Color
+text-color = #ffffff
+selection-color = #ffffff
+default-result-color = #c9c9c9
+border-color = #24b3f0
+outline-color = #ffffff
+background-color = #282a2e
+
+# Window
+prompt-text = "  run: "
+prompt-padding = 0
+num-results = 3
+result-spacing = 10
+horizontal = true
+width = 700
+height = 45
+outline-width = 0
+border-width = 2
+corner-radius = 10
+padding-top = 5
+padding-bottom = 5
+padding-left = 5
+padding-right = 5
+
+# Other
+clip-to-padding = true
+scale = true
+output = ""
+anchor = center
+exclusive-zone = -1
+margin-top = 0
+margin-bottom = 0
+margin-left = 0
+margin-right = 0
+hide-cursor = true
+text-cursor = true
+history = true
+matching-algorithm = normal
+require-match = true
+auto-accept-single = false
+hide-input = false
+hidden-character = "*"
+physical-keybindings = true
+print-index = false
+drun-launch = true
+late-keyboard-init = false
+multi-instance = false
+ascii-input = true
+
