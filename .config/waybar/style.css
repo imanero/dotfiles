@@ -7,42 +7,39 @@
 }
 
 .modules-center {
-  background-color: #282a2e;
-  color: #e0e0e0;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
   padding: 5px 20px;
 }
 
 .modules-left {
-  background-color: #282a2e;
-  color: #e0e0e0;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
   padding-right: 10px;
 }
 
 .modules-right {
-  background-color: #282a2e;
-  color: #e0e0e0;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
   padding: 5px 10px;
 }
 
 #clock {
-  color: #24b3f0;
-}
-
-#workspaces {
-  color: black;
-}
-
-#workspaces button {
-  color: #a6a6a6;
-}
-
-#workspaces button.active {
-  color: #e0e0e0;
-  border-bottom: 5px solid #24b3f0;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  color: #89dceb;
 }
 
 #language {
-  color: #24b3f0;
+  color: #89dceb;
+}
+
+
+#workspaces button {
+  color: #bac2de;
+}
+
+#workspaces button.active {
+  color: #cdd6f4;
+  border-bottom: 5px solid #89dceb;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
