@@ -1,0 +1,35 @@
+* {
+  border-radius: 0;
+}
+
+window {
+  font-family: "FantasqueSansM Nerd Font";
+  font-size: 18px;
+  background-color: rgba(24,24,37,0.8);
+  color: #cdd6f4;
+  border-radius: 8px;
+}
+
+image {
+  margin: 0px 8px;
+}
+
+#entry:selected {
+  background-color: #89dceb;
+}
+
+#entry {
+  padding: 0.5em;
+  border-radius: 25px;
+}
+
+#text:selected {
+  color: #1e1e2e;
+}
+
+#input {
+  background-color: #1e1e2e;
+  padding: 0.25em 0.5em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}

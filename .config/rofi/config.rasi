@@ -1,10 +1,9 @@
 configuration {
-  display-drun: "Applications: ";
-  display-window: "Windows: ";
-  display-emoji: "Emoji: ";
+  display-drun: "run:";
+  display-window: "Tabs:";
   drun-display-format: "{icon}  {name}";
-  font: "RobotoMono Nerd Bold 12";
-  modi: "window,drun,emoji";
+  font: "FantasqueSansM Nerd Font Bold 13";
+  modi: "window,drun";
   show-icons: true;
   icon-theme: "kora";
 }
@@ -12,11 +11,11 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #1c1e21;
-  bg-alt: #282a2e;
-  fg: #ffffff;
-  fg-alt: #c9c9c9;
-  window-border-color: #4A5057;
+  bg: #1e1e2e;
+  bg-alt: #181825;
+  fg: #cdd6f4;
+  fg-alt: #89dceb;
+  window-border-color: #1e1e2e;
   
   background-color: @bg;
   
@@ -25,43 +24,49 @@ configuration {
   padding: 0;
   spacing: 0;
 }
+
 element {
   padding: 12;
   text-color: @fg-alt;
 }
+
 element-icon {
   size: 25px;
 }
+
 element selected {
   text-color: @fg;
 }
+
 element-text {
   background-color: inherit;
   text-color: inherit;
 }
+
 entry {
   background-color: @bg-alt;
   padding: 12;
   text-color: @fg;
 }
-inputbar {
-  children: [entry];
-}
+
 listview {
   background-color: @bg;
   columns: 1;
   lines: 8;
 }
+
 mainbox {
   background-color: @bg;
   children: [inputbar, listview];
 }
+
 prompt {
   background-color: @bg-alt;
   enabled: true;
   padding: 12 0 0 12;
   text-color: @fg;
 }
+
 window {
   width: 900px;
   transparency: "real";

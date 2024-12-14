@@ -1,45 +1,41 @@
 * {
-  font-family: "RobotoMono Nerd";
-  font-size: 13px;
-  font-weight: bold;
-  background-color: transparent;
-  border-radius: 10px;
+  font-family: "FantasqueSansM Nerd Font";
+  font-size: 14px;
+  font-weight: Bold;
+  background-color: transparent;  
 }
 
-.modules-center {
+.modules-center, .modules-right,  .modules-left{
   background-color: #1e1e2e;
   color: #cdd6f4;
   padding: 5px 20px;
+  border-radius: 8px;
 }
 
 .modules-left {
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-  padding-right: 10px;
+  padding: 0px 20px 0px 10px;
 }
 
-.modules-right {
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-  padding: 5px 10px;
-}
 
-#clock {
+#clock, #language {
   color: #89dceb;
 }
 
 #language {
-  color: #89dceb;
+  margin-left: -7.5px;
 }
 
-
 #workspaces button {
-  color: #bac2de;
+  padding: 0px 5px;
+  color: #9399b2;
 }
 
 #workspaces button.active {
   color: #cdd6f4;
-  border-bottom: 5px solid #89dceb;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #cdd6f4;
 }
