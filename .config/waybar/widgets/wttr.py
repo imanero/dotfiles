@@ -1,7 +1,8 @@
 import json
 import requests
+from datetime import datetime, time
 
-WEATHER_CODES = {
+WEATHER_CODES_DAY = {
     "113": "☀️",
     "116": "⛅️",
     "119": "☁️",
@@ -52,9 +53,67 @@ WEATHER_CODES = {
     "395": "❄️",
 }
 
+WEATHER_CODES_NIGHT = {
+    "113": "🌙",
+    "116": " ",
+    "119": "☁️",
+    "122": "☁️",
+    "143": "🌫",
+    "176": " ",
+    "179": "🌧",
+    "182": "🌧",
+    "185": "🌧",
+    "200": "⛈",
+    "227": "🌨",
+    "230": "❄️",
+    "248": "🌫",
+    "260": "🌫",
+    "263": " ",
+    "266": " ",
+    "281": "🌧",
+    "284": "🌧",
+    "293": " ",
+    "296": " ",
+    "299": "🌧",
+    "302": "🌧",
+    "305": "🌧",
+    "308": "🌧",
+    "311": "🌧",
+    "314": "🌧",
+    "317": "🌧",
+    "320": "🌨",
+    "323": "🌨",
+    "326": "🌨",
+    "329": "❄️",
+    "332": "❄️",
+    "335": "❄️",
+    "338": "❄️",
+    "350": "🌧",
+    "353": " ",
+    "356": "🌧",
+    "359": "🌧",
+    "362": "🌧",
+    "365": "🌧",
+    "368": "🌨",
+    "371": "❄️",
+    "374": "🌧",
+    "377": "🌧",
+    "386": "⛈",
+    "389": "🌩",
+    "392": "⛈",
+    "395": "❄️",
+}
+
 def main():
-    weather = json.loads(requests.get("https://wttr.in/Tehran?format=j1", timeout=10,).text)
-    print(json.dumps({"text":WEATHER_CODES[weather["current_condition"][0]["weatherCode"]] + " " + weather["current_condition"][0]["temp_C"] + "°C"}))
+    now = datetime.now()
+    now_time = now.time()
+    weather = json.loads(requests.get("https://wttr.in/Tehran?format=j2", timeout=10,).text)    
+    if now_time >= time(21,00) or now_time <= time(7,00):
+        # Night
+        print(json.dumps({"text":WEATHER_CODES_NIGHT[weather["current_condition"][0]["weatherCode"]] + " " + weather["current_condition"][0]["temp_C"] + "°C"}))
+    else: 
+        #Day
+        print(json.dumps({"text":WEATHER_CODES_DAY[weather["current_condition"][0]["weatherCode"]] + " " + weather["current_condition"][0]["temp_C"] + "°C"}))
 
 if __name__ == "__main__":
     main()

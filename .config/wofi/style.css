@@ -1,21 +1,30 @@
 * {
   border-radius: 0;
+  outline: none;
+  border: none;
 }
 
-window {
+#window {
   font-family: "FantasqueSansM Nerd Font";
   font-size: 18px;
-  background-color: rgba(24,24,37,0.8);
-  color: #cdd6f4;
-  border-radius: 8px;
+  background-color: rgba(46,52,64,0.8);
+  border-radius: 7px;
 }
 
 image {
   margin: 0px 8px;
 }
 
-#entry:selected {
-  background-color: #89dceb;
+#entry:selected , #entry:selected  #expander-box {
+  color: #3B4252;
+}
+
+#expander-box {
+  background-color: inherit;
+}
+
+#entry #text , #entry:hover{
+  color: inherit;
 }
 
 #entry {
@@ -23,13 +32,8 @@ image {
   border-radius: 25px;
 }
 
-#text:selected {
-  color: #1e1e2e;
-}
-
 #input {
-  background-color: #1e1e2e;
-  padding: 0.25em 0.5em;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  padding: 0.5em;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
