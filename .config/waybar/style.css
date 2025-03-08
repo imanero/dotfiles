@@ -5,7 +5,7 @@
 }
 
 window {
-  background-color: rgba(59, 66, 82, 0.2);
+  background-color: rgba(48, 52, 70, 0.2);
   border-radius: 25px;
 }
 
@@ -15,7 +15,7 @@ window {
 }
 
 #clock, #language {
-  color: #8fbcbb;
+  color: #8caaee;
 }
 
 #language {
@@ -24,20 +24,20 @@ window {
 
 #workspaces button {
   padding: 0px 5px;
-  color: #d8dee9;
+  color: #c6d0f5;
 }
 
 #workspaces button.active {
-  color: #d8dee9;
+  color: #c6d0f5;
 }
 
 #workspaces button:hover {
   background-color: inherit;
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #d8dee9;
+  color: #8caaee;
 }
 
 #workspaces button.urgent {
-  color: #bf616a;
+  color: #e78284;
 }

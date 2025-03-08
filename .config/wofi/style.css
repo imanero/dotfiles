@@ -7,7 +7,7 @@
 #window {
   font-family: "FantasqueSansM Nerd Font";
   font-size: 18px;
-  background-color: rgba(46,52,64,0.8);
+  background-color: rgba(48, 52, 70, 0.8);
   border-radius: 7px;
 }
 
@@ -16,7 +16,7 @@ image {
 }
 
 #entry:selected , #entry:selected  #expander-box {
-  color: #3B4252;
+ color: #c6d0f5;
 }
 
 #expander-box {

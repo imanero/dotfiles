@@ -1,5 +1,5 @@
 {
-    "layer": "top",
+    "layer": "bottom",
     "output": "DP-1",
     "height": 35,
     "spacing": 20,
@@ -21,7 +21,7 @@
         "clock"
     ],
     "hyprland/window": { "format": "{}", "icon": true, "rewrite":{"":"󰣇  Welcome"} }, 
-    "clock": { "interval": 1, "format": "{:%H:%M:%S}"},
+    "clock": { "interval": 1, "format": "{:%H:%M:%S}", "tooltip": false},
     "cpu": { 
         "interval": 2, "format": "{icon} {usage}%",
         "format-icons": ["<span color='#d8dee9'> </span>", "<span color='#d08770'> </span>", "<span color='#bf616a'> </span>"]
