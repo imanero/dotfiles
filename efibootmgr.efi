@@ -1,4 +1,4 @@
 for ((i =0; i < 10; ++i)); do
     efibootmgr -b 000${i} -B
 done
-efibootmgr -c -d /dev/nvme0n1 -p 1 -L "Arch Linux" -l /vmlinuz-linux-xanmod-edge-linux-bin-x64v3 -u "root= rw fsck.mode=skip loglevel=0 rd.system.show_status=false nowatchdog mitigations=off libahci-ignore_sss=1 initrd=\initramfs-linux-xanmod-edge-linux-bin-x64v3.img" #quiet
+efibootmgr -c -d /dev/nvme0n1 -p 1 -L "Arch Linux" -l /vmlinuz-linux-xanmod-edge-linux-bin-x64v3 -u "root=UUID=4b846d4b-a325-4f06-96fd-f9e3e3b5bd68 rw fsck.mode=skip loglevel=0 rd.system.show_status=false nowatchdog mitigations=off libahci-ignore_sss=1 initrd=\initramfs-linux-xanmod-edge-linux-bin-x64v3.img" #quiet

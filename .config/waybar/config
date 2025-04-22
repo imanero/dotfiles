@@ -61,10 +61,10 @@
     	"interval": 2
     },
     "custom/weather": {
-        "exec": "python .config/waybar/widgets/wttr.py 2>/dev/null",
-        "format": "{}",
-        "interval": 300,
-	    "on-click": "xdg-open https://wttr.in/Tehran",
-        "return-type": "json"
+    	"format": "{}°",
+    	"tooltip": true,
+    	"interval": 3600,
+	"exec": "wttrbar --location Tehran --custom-indicator '☁️ {humidity}%  {ICON} {FeelsLikeC}'",
+    	"return-type": "json"
     }
 }
