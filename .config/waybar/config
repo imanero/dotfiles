@@ -1,6 +1,5 @@
 {
     "layer": "bottom",
-    "output": "DP-1",
     "height": 35,
     "spacing": 20,
     "margin": "10 10 0 10",
@@ -14,10 +13,12 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "temperature",
         "memory",
+	"temperature",
         "cpu",
+	"custom/gpu-temp",
 	"custom/gpu-usage",
+	"tray",
         "clock"
     ],
     "hyprland/window": { "format": "{}", "icon": true, "rewrite":{"":"󰣇  Welcome"} }, 
@@ -54,6 +55,12 @@
         "critical-threshold": 80,
         "format-critical": " {temperatureC}°C"
     },
+    "custom/gpu-temp": {
+        "exec": "nvidia-settings -q gpucoretemp -t",
+        "format": " {}°C",
+        "return-type": "",
+        "interval": 2
+    },
     "custom/gpu-usage": {
         "exec": "nvidia-smi | cut -c 74-75 | awk 'NR==10'",
         "format": "󰲙 {}%",
@@ -66,5 +73,9 @@
     	"interval": 3600,
 	"exec": "wttrbar --location Tehran --custom-indicator '☁️ {humidity}%  {ICON} {FeelsLikeC}'",
     	"return-type": "json"
+    },
+    "tray": {
+    	"icon-size": 20,
+	"spacing": 5
     }
 }

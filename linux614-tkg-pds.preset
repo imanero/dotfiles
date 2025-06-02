@@ -1,0 +1,9 @@
+# mkinitcpio preset file for the 'linux614-tkg-pds' package
+
+ALL_config="/etc/mkinitcpio.conf"
+ALL_kver="/boot/vmlinuz-linux614-tkg-pds"
+
+PRESETS=('default')
+
+default_image="/boot/initramfs-linux614-tkg-pds.img"
+default_uki="/boot/efi/boot/bootx64.efi"
