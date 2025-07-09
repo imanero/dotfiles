@@ -4,18 +4,18 @@
   font-weight: Bold;
 }
 
-window {
-  background-color: rgba(48, 52, 70, 0.2);
+window { 
+  background-color: rgba(30, 30, 46, 0.2);
   border-radius: 25px;
 }
 
 .modules-center, .modules-right,  .modules-left{
-  color: #d8dee9;
+  color: #cdd6f4;
   padding: 5px 20px 5px 10px;
 }
 
 #clock, #language {
-  color: #8caaee;
+  color: #89b4fa;
 }
 
 #language {
@@ -24,26 +24,26 @@ window {
 
 #workspaces button {
   padding: 0px 5px;
-  color: #c6d0f5;
+  color: #cdd6f4;
 }
 
 #workspaces button.active {
-  color: #c6d0f5;
+  color: #cdd6f4;
 }
 
 #workspaces button:hover {
   background-color: inherit;
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #8caaee;
+  color: #89b4fa;
 }
 
 #workspaces button.urgent {
-  color: #e78284;
+  color: #f38ba8;
 }
 
 tooltip {
   border-radius: 5px;
-  background-color: #303446;
+  background-color: #1e1e2e;
   opacity: 0.9;
 }
