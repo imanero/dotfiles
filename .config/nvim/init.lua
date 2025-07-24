@@ -10,5 +10,3 @@ vim.wo.number = true
 require("imanero.config.lazy")
 require("imanero.config.theme")
 require("imanero.config.lualine")
-require("imanero.config.telescope")
-require("imanero.config.treesitter")
