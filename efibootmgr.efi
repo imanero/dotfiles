@@ -1,4 +1,0 @@
-for ((i =0; i < 10; ++i)); do
-    efibootmgr -b 000${i} -B
-done
-efibootmgr -c -d /dev/nvme1n1 -p 1 -L "Arch Linux" -l /vmlinuz-linux615-tkg-pds -u "root=UUID=f1e4ceef-61ad-45f8-b238-9356db69508f rw fsck.mode=skip loglevel=0 rd.system.show_status=false nowatchdog mitigations=off libahci-ignore_sss=1 initrd=\initramfs-linux615-tkg-pds.img" #quiet

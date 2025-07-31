@@ -1,0 +1,9 @@
+# mkinitcpio preset file for the 'linux615-tkg-bmq' package
+
+ALL_config="/etc/mkinitcpio.conf"
+ALL_kver="/boot/vmlinuz-linux615-tkg-bmq"
+
+PRESETS=('default')
+
+default_image="/boot/initramfs-linux615-tkg-bmq.img"
+default_uki="/boot/efi/EFI/boot/bootx64.efi"
