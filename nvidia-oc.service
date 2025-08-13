@@ -3,7 +3,7 @@ Description=NVIDIA Overclocking Service
 After=network.target
 
 [Service]
-ExecStart=/home/iman/.config/nvidia-oc set --index 0 --power-limit 240000 --freq-offset 100 --mem-offset 1600 --min-clock 0 --max-clock 2100
+ExecStart=/home/iman/.config/nvidia-oc set --index 0 --power-limit 240000 --freq-offset 110 --mem-offset 1500 --min-clock 0 --max-clock 2100
 User=root
 Restart=on-failure
 
