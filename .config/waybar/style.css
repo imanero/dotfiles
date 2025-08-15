@@ -11,7 +11,7 @@ window {
 
 .modules-center, .modules-right,  .modules-left{
   color: #cdd6f4;
-  padding: 5px 20px 5px 10px;
+  padding: 5px 20px;
 }
 
 #clock, #language {
@@ -42,8 +42,21 @@ window {
   color: #f38ba8;
 }
 
+#workspaces {
+    margin-left: -5px;
+}
+
 tooltip {
   border-radius: 5px;
   background-color: #1e1e2e;
   opacity: 0.9;
 }
+
+#custom-logo {
+    font-size: 20px;
+}
+
+#custom-logo:hover {
+    color: #89b4fa;
+}
+

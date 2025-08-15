@@ -4,6 +4,7 @@
     "spacing": 20,
     "margin": "10 10 0 10",
     "modules-left": [
+        "custom/logo",
         "hyprland/workspaces",
         "hyprland/language",
         "pulseaudio",
@@ -74,8 +75,15 @@
 	"exec": "wttrbar --location Tehran --custom-indicator '☁️ {humidity}%  {ICON} {FeelsLikeC}'",
     	"return-type": "json"
     },
+    "custom/logo": {
+        "format":"{icon}",
+        "tooltip": false,
+        "format-icons":{"default":" "},
+        "on-click":"wlogout"
+    },
     "tray": {
     	"icon-size": 20,
-	"spacing": 5
+    	"spacing": 5
     }
 }
+
