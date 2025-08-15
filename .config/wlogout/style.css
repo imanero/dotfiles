@@ -1,0 +1,51 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(17, 17, 27, 0.9);
+}
+
+button {
+    border-radius: 5;
+	text-decoration-color: #cdd6f4;
+    font-weight: bold;
+    font-family: "FantasqueSansM Nerd Font";
+    color: #cdd6f4;
+	background-color: #1e1e2e;
+    margin: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus {
+	background-color: #313244;
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/home/iman/.config/wlogout/assets/lock.svg"));
+}
+
+#logout {
+    background-image: image(url("/home/iman/.config/wlogout/assets/logout.svg"));
+}
+
+#suspend {
+    background-image: image(url("/home/iman/.config/wlogout/assets/suspend.svg"));
+}
+
+#hibernate {
+    background-image: image(url("/home/iman/.config/wlogout/assets/hibernate.svg"));
+}
+
+#shutdown {
+    background-image: image(url("/home/iman/.config/wlogout/assets/shutdown.svg"));
+}
+
+#reboot {
+    background-image: image(url("/home/iman/.config/wlogout/assets/reboot.svg"));
+}
+
