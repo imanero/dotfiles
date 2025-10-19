@@ -1,0 +1,7 @@
+{
+    "custom/wttr": {
+        "label": "{}°C ",
+        "execute": "wttrbar --location Tehran | jq -r '.text'",
+        "interval": 1800000
+    }
+}

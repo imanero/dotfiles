@@ -82,8 +82,8 @@
         "on-click":"wlogout"
     },
     "tray": {
-    	"icon-size": 20,
-    	"spacing": 5
+    	"icon-size": 22,
+    	"spacing": 10
     }
 }
 
