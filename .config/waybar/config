@@ -64,7 +64,7 @@
     },
     "custom/gpu-usage": {
         "exec": "nvidia-smi | cut -c 74-75 | awk 'NR==10'",
-        "format": "󰲙 {}%",
+        "format": "󰲙  {}%",
         "return-type": "",
     	"interval": 2
     },
