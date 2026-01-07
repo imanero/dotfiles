@@ -4,23 +4,22 @@
     "spacing": 20,
     "margin": "10 10 0 10",
     "modules-left": [
-        "custom/logo",
-        "hyprland/workspaces",
-        "hyprland/language",
-        "pulseaudio",
-	"custom/weather"
+    "hyprland/workspaces",
+    "hyprland/language",
+    "pulseaudio",
+	"custom/weather",
+    "tray"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "memory",
+    "memory",
 	"temperature",
-        "cpu",
+    "cpu",
 	"custom/gpu-temp",
 	"custom/gpu-usage",
-	"tray",
-        "clock"
+    "clock"
     ],
     "hyprland/window": { "format": "{}", "icon": true, "rewrite":{"":"󰣇  Welcome"} }, 
     "clock": { "interval": 1, "format": "{:%H:%M:%S}", "tooltip": false},
@@ -36,7 +35,7 @@
             "default": [" "," ", " "]
         },
         "scroll-step": 5,
-        "on-click": "pulsemixer --toggle-mute",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": false
     },
     "hyprland/workspaces": {
@@ -74,12 +73,6 @@
     	"interval": 3600,
 	"exec": "wttrbar --location Tehran --custom-indicator '☁️ {humidity}%  {ICON} {FeelsLikeC}'",
     	"return-type": "json"
-    },
-    "custom/logo": {
-        "format":"{icon}",
-        "tooltip": false,
-        "format-icons":{"default":" "},
-        "on-click":"wlogout"
     },
     "tray": {
     	"icon-size": 22,
