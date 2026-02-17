@@ -1,0 +1,64 @@
+* {
+  font-family: "FantasqueSansM Nerd Font";
+  font-size: 14px;
+  font-weight: Bold;
+}
+
+window { 
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modules-center, .modules-right,  .modules-left{
+  background-color: rgb(30, 30, 46);
+  border-radius: 25px;
+  color: #cdd6f4;
+  padding: 5px 20px;
+}
+
+#clock, #language {
+  color: #89b4fa;
+}
+
+#language {
+  margin-left: -7.5px;
+}
+
+#workspaces button {
+  padding: 0px 5px;
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  color: #cdd6f4;
+}
+
+#workspaces button:hover {
+  background-color: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #89b4fa;
+}
+
+#workspaces button.urgent {
+  color: #f38ba8;
+}
+
+#workspaces {
+    margin-left: -5px;
+    padding-top: 1px;
+}
+
+tooltip {
+  border-radius: 5px;
+  background-color: #1e1e2e;
+  opacity: 0.9;
+}
+
+#custom-logo {
+    font-size: 20px;
+}
+
+#custom-logo:hover {
+    color: #89b4fa;
+}
+

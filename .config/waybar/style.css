@@ -1,18 +1,12 @@
 * {
-  font-family: "FantasqueSansM Nerd Font";
+  font-family: FantasqueSansM Nerd Font, iransansX;
   font-size: 14px;
   font-weight: Bold;
 }
 
-window { 
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .modules-center, .modules-right,  .modules-left{
-  background-color: rgb(30, 30, 46);
-  border-radius: 25px;
   color: #cdd6f4;
-  padding: 5px 20px;
+  padding: 0px 10px 0px 0px;
 }
 
 #clock, #language {
@@ -20,45 +14,36 @@ window {
 }
 
 #language {
-  margin-left: -7.5px;
+  margin-left: -5px;
 }
 
 #workspaces button {
-  padding: 0px 5px;
+  border-radius: 0px;
+  padding: 0px 3px;
   color: #cdd6f4;
 }
 
-#workspaces button.active {
-  color: #cdd6f4;
+#workspaces button.empty {
+    color: #a6adc8;
 }
 
 #workspaces button:hover {
-  background-color: inherit;
-  box-shadow: inherit;
-  text-shadow: inherit;
-  color: #89b4fa;
+  background-color: #181825;
+}
+
+#workspaces button.active {
+  color: #1e1e2e;
+  background-color: #89b4fa;
+  border-color: #313244;
 }
 
 #workspaces button.urgent {
-  color: #f38ba8;
-}
-
-#workspaces {
-    margin-left: -5px;
-    padding-top: 1px;
+  background-color: #f38ba8;
+  color: #1e1e2e;
 }
 
 tooltip {
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #1e1e2e;
-  opacity: 0.9;
-}
-
-#custom-logo {
-    font-size: 20px;
-}
-
-#custom-logo:hover {
-    color: #89b4fa;
 }
 

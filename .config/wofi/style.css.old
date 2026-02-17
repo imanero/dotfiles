@@ -1,0 +1,41 @@
+* {
+  border-radius: 0;
+  outline: none;
+  border: none;
+}
+
+#window {
+  font-family: FantasqueSansM Nerd Font, iransansX;
+  font-size: 18px;
+  background-color: #1e1e2e;
+  border-radius: 4px;
+}
+
+image {
+  margin: 0px 8px;
+}
+
+#entry:selected , #entry:selected  #expander-box {
+  color: #1e1e2e;
+  background-color: #89b4fa;
+}
+
+#expander-box {
+  background-color: inherit;
+}
+
+#entry #text , #entry:hover{
+  color: inherit;
+}
+
+#entry {
+  padding: 0.5em;
+/*  border-radius: 25px;*/
+}
+
+#input {
+  padding: 0.5em;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #313244;
+}
